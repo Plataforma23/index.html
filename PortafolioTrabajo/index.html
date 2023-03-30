@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ing.Antonio Guaman</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Tono.png" alt="">
+            </div>
+            <h1>ANTONIO GUAMAN</h1>
+            <h2>Ingeniero de Sistemas - Experto en desarrollo Web-Escritorio</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100010073887476&sk=photos" target="_black"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=0983756295&text=Hola como podemos ayudarte" class="btn btn-dark"  target="_black"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/watch?v=ORQIKXZFqLE" target="_black"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_black"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Luis Antonio Guaman.</span>  Soy Ingeniero en Sistema me gradue en la Universidad Catolica de Cuenca,
+                desarrollo paginas Web en Escritorio y Android
+                soy una persona que me gusta mucho la responsabilidad y el trabajo en equipo vivo en la provincia de canar tengo 31 años 
+                me distingo por ser una persona trabajadora.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-05-1991
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            0983756295
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luis25eydan@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Chaglaban via la posta
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <a download="Prueba" class="fa-sharp fa-solid fa-download" href="Downloand/Hoja.pdf"></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Soporte Tecnico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Estudios</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad Catolica de Cuenca</span>
+                        <span class="fecha">2015 - 2021</span>
+                        <p>Hola mis estudios universitarios lo realize en la Universidad
+                            Catolica de Cuenca extencion Cañar y mis estudios secundarios lo realize en el
+                            Colegio Jose Peralta de la provincia de Cañar</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Cisco</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Hola el presente certificado lo realize en cisco para ser experto en redes locales y externa, también presto  servicio de soluciones de red, con el objetivo de ayudar a la empresa a conectar a todos y demostrar las cosas asombrosas que se pueden lograr con una visión clara del futuro.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Certificado</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Hola el presente certificado lo realize en la Universidad Catolica de Cuenca la cual se trata de Introduccion al dessarrollo de videos juegos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Experiencia</h4>
+                        <span class="casa">LTD.Yuyay</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Hola mis pasantias universitaria lo realize en la cooperativa de creditos y ahorro LTDA.Yuyay, realizando
+                            Soporte tecnico, Cableado Estructurado, Desarrollo de software en la Web y Android con el proyecto de Sistema de Geolocalizacion de clientes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Experiencia</h4>
+                        <span class="casa">La Galeria</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Hola la siguiente experiencia lo obtuve en la empresa La Galeria realizando marketing Digital para la empresa con el objetivo de mostrar todos sus productos en web</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Autodidacta</span>
+                        <span class="fecha">2015 - 2022</span>
+                        <p>Hola me gusta ser audidacta me diante ello voy aprendido dia tras dia, es por ello que desarrolle un software de escrito un Sistema de Inventarios diseñado con el lenguaje de Java</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Panel.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Panel</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Producto.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Formulario Producto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Listado.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Formulario Listado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Venta.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Formulario Venta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Detalle.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Formulario Detalle</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Empresa.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Empresa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="galerias">
+                <div class="proyectos">
+                    <img src="img/Grupo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo en Grupo</h3>
+                        <p>Analisis de riesgo en la Informacion</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="img/Trabajo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo en Grupo</h3>
+                        <p>Analis de norma de seguridad de la Informacion</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="img/Vista.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Investigacion</h3>
+                        <p>Desarrollo de investigacion</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="img/Pasandias.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Soporte Tecnico</h3>
+                        <p>Mantenimiento de redes</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="img/Tesis.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tesis</h3>
+                        <p>Sustentacion de la tesis</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="img/Compa.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/luis25eydan@gmail.com " method="POST">
+                    <input type="text" name="name" placeholder="Nombre completo">
+                    <input type="text" name="telefono" placeholder="Número telefónico">
+                    <input type="text" name="email" placeholder="Dirección de correo">
+                    <input type="text" name="subject" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                  
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Claglaban via la posta
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 0983756295
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: luis25eydan@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
